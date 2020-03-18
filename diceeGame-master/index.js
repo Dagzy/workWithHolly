@@ -1,3 +1,15 @@
+function playGame(){
+// winner code
+let player1 = rollPlayerOne();
+let player2 = rollPlayerTwo();
+if (player1 > player2){
+  document.getElementById("header").innerHTML = "Player One Wins!";
+}else if (player1 < player2){
+  document.getElementById("header").innerHTML = "Player Two Wins!";
+}else{
+   document.getElementById("header").innerHTML = "It's a draw!";
+ }
+}
 function rollPlayerOne() {
   // Player Two Dice
   var playerOneRoll = Math.floor(Math.random() * 6) + 1;
@@ -56,13 +68,3 @@ function rollPlayerTwo() {
   }
   return playerTwoRoll;
 }
-// winner code
-let player1 = rollPlayerOne();
-let player2 = rollPlayerTwo();
-if (player1 > player2){
-  document.getElementById("header").innerHTML = "Player One Wins!";
-}else if (player1 < player2){
-  document.getElementById("header").innerHTML = "Player Two Wins!";
-}else{
-   document.getElementById("header").innerHTML = "It's a draw!";
- }

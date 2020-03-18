@@ -39,3 +39,9 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+.btn-container{
+  text-align: center;
+}
+.btn{
+  font-size: 3em;
+}
