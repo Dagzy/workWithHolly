@@ -1,1 +1,2 @@
--- A very cool repo.
+# A very cool repo.
+### Commit often!
