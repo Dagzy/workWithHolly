@@ -13,9 +13,9 @@ function playGame(){
     var randomColor = colorArray[randomNumber];
     previousColors.push(randomColor);
     showSequence();
+    printSequence();
 }
 function showSequence(){
-    console.log(sequence);
     if(sequence){
         clearInterval(sequence)
         i = 0;
@@ -30,4 +30,11 @@ function showSequence(){
             i = 0;
         }
     },1000)
+}
+
+function printSequence(){
+    console.log("--------------------------------NEW SEQUENCE-----------------------------");
+    for (let i = 0; i < previousColors.length; i++) {
+        console.log(previousColors[i])
+    }    
 }
